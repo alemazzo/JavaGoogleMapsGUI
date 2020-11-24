@@ -1,4 +1,4 @@
-package useGradleAndMaps;
+package utils;
 
 public class Pair<X, Y> {
     public X first;

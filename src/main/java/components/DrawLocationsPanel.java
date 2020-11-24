@@ -1,4 +1,4 @@
-package useGradleAndMaps;
+package components;
 
 
 import java.awt.BasicStroke;
@@ -23,6 +23,10 @@ import com.google.maps.model.DirectionsStep;
 import com.google.maps.model.EncodedPolyline;
 import com.google.maps.model.LatLng;
 import com.google.maps.model.PlacesSearchResult;
+
+import maps.MapsHandlerRequest;
+import utils.Pair;
+import utils.Place;
 
 public class DrawLocationsPanel extends JPanel {
 

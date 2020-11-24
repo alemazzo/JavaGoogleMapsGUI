@@ -1,4 +1,4 @@
-package useGradleAndMaps;
+package utils;
 
 import java.awt.Graphics2D;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import com.google.maps.model.PlacesSearchResult;
 
 public class Place {
     
-    static int DEFAULT_SIZE = 10;
-    static int HOVER_SIZE = 20;
+    public static int DEFAULT_SIZE = 10;
+    public static int HOVER_SIZE = 20;
     
     private Double x;
     private Double y;
@@ -21,7 +21,7 @@ public class Place {
     private List<LatLng> pathLatLng = new ArrayList<>();
     
   
-    Place(PlacesSearchResult place, LatLng coordinates, Double x, Double y){
+    public Place(PlacesSearchResult place, LatLng coordinates, Double x, Double y){
         this.place = place;
         this.coordinates = coordinates;
         this.x = x;

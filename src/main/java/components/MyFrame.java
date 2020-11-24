@@ -1,4 +1,4 @@
-package useGradleAndMaps;
+package components;
 
 import java.awt.*;
 import javax.swing.*;

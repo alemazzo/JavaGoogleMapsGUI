@@ -1,4 +1,4 @@
-package useGradleAndMaps;
+package components;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -18,6 +18,10 @@ import com.google.maps.ImageResult;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.LatLng;
 import com.google.maps.model.PlacesSearchResult;
+
+import maps.MapsHandlerRequest;
+import utils.Pair;
+import utils.Place;
 
 public class Gui {
     private final MyFrame frame;
