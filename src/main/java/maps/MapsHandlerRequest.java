@@ -1,4 +1,4 @@
-package useGradleAndMaps;
+package maps;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -22,14 +22,16 @@ import com.google.maps.model.PlacesSearchResult;
 import com.google.maps.model.Size;
 import com.google.maps.model.TravelMode;
 
+import utils.Pair;
+
 public class MapsHandlerRequest{
     
     private static GeoApiContext context;
 
     public static int DEFAULT_ZOOM = 15;
     private static int FROM_M_TO_KM = 1000;
-    private static int SIZE_W_REQUEST = 1920;
-    private static int SIZE_H_REQUEST = 1080;
+    private static int SIZE_W_REQUEST = 1280;
+    private static int SIZE_H_REQUEST = 720;
     private int zoom = DEFAULT_ZOOM;
     private final Size imageSize = new Size(SIZE_W_REQUEST, SIZE_H_REQUEST); 
 
@@ -94,7 +96,7 @@ public class MapsHandlerRequest{
                 .newRequest(context, this.imageSize)
                 .center(locationLatLang)
                 .zoom(this.zoom)
-                .scale(6)
+                .scale(10)
                 .maptype(StaticMapType.satellite)
                 .await();    
     }
